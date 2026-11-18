@@ -5,6 +5,8 @@ const monthLabel = document.querySelector('#month-label');
 const summaryService = document.querySelector('#summary-service');
 const summaryDate = document.querySelector('#summary-date');
 const summaryTime = document.querySelector('#summary-time');
+const bookingLink = document.querySelector('#booking-link');
+const whatsappNumber = '542216255391';
 
 const weekdayNames = ['DOM', 'LUN', 'MAR', 'MIÉ', 'JUE', 'VIE', 'SÁB'];
 const monthNames = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'];
@@ -27,6 +29,14 @@ function updateSummary() {
   summaryService.textContent = serviceSelect.value;
   summaryDate.textContent = formatDate(selectedDate);
   summaryTime.textContent = `${selectedTime} hs`;
+
+  const message = [
+    'Hola, quiero consultar por un turno en M. Nails Belleza.',
+    `Servicio: ${serviceSelect.value}`,
+    `Fecha: ${formatDate(selectedDate)}`,
+    `Horario: ${selectedTime} hs`,
+  ].join('\n');
+  bookingLink.href = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
 }
 
 function renderDates() {
