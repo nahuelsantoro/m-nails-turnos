@@ -1,6 +1,6 @@
 # M. Nails Belleza — turnos
 
-Sitio web estático para presentar servicios y recibir consultas de turnos por WhatsApp.
+Sitio web estático para presentar servicios, diseños disponibles y la promo de noviembre, con consultas de turnos por WhatsApp.
 
 ## Vista local
 
@@ -14,6 +14,6 @@ Luego visitá `http://localhost:4173`.
 
 ## Publicación
 
-El sitio no necesita servidor de aplicación: es HTML, CSS y JavaScript estático. Se puede publicar en GitHub Pages u otro hosting estático. El botón de reserva abre WhatsApp con el servicio, la fecha y el horario elegidos; no guarda turnos ni confirma disponibilidad automáticamente.
+El sitio no necesita servidor de aplicación: es HTML, CSS y JavaScript estático, con las imágenes de referencia guardadas localmente en `assets/`. Se puede publicar en GitHub Pages u otro hosting estático. El botón de reserva abre WhatsApp con el servicio, la fecha y el horario elegidos; no guarda turnos ni confirma disponibilidad automáticamente.
 
 Los servicios y horarios mostrados son ejemplos y deben confirmarse con el emprendimiento antes de publicar.
